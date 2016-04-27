@@ -1,9 +1,9 @@
 dependencies:
   pre:
     - go get github.com/andybons/hipchat
-  override:
+  # override:
   # Remove cached Go sources
-  - rm -rf $HOME/.go_workspace
+  # - rm -rf $HOME/.go_workspace
 test:
   override:
   - go vet ./...
